@@ -1,5 +1,8 @@
 <?php
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 require_once __DIR__ . '/../app/db.php';
 
 $statement = $pdo->query("SELECT * FROM messages ORDER BY created_at DESC");
